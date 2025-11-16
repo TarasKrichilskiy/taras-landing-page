@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Taras — Personal Landing Page</title>
+  <meta name="description" content="Personal website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header class="container site-header">
+  <a class="brand" href="#top" aria-label="Home">
+    <img src="assets/favicon.svg" width="150" height="80" alt="Logo">
+  </a>
+  <nav class="nav">
+    <a href="#MainPage">Main Page</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="ai-toggle" class="btn btn-outline" aria-expanded="false"></button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>Hi, I’m <span class="accent">Taras</span> — builder, learner, and problem-solver.</h1>
+
+      <!--
+      <form class="search" role="search" aria-label="Site search" onsubmit="return false;">
+        <label for="site-search" class="sr-only">Search</label>
+        <input id="site-search" type="search" placeholder="Search projects, skills, sections..." autocomplete="off">
+        <button type="button" id="clear-search" class="btn btn-ghost" title="Clear">✕</button>
+      </form>
+      -->
+
+      <div class="pill-row">
+        <!-- you can add pills/badges here -->
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card">
+        <h3>Currently</h3>
+        <ul>
+          <li>Learning: Advanced JS + C++</li>
+          <li>Learning: C#</li>
+          <li>Learning: REST API</li>
+          <li>Learning: Azure cloud (Webapp, functions, AI services)</li>
+          <li>Learning: AI (OCR, LLM integration)</li>
+          <li>Building: Personal site & tools</li>
+        </ul>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>I’m a CS &amp; SE grad who enjoys turning messy problems into simple, reliable tools.</p>
+  </section>
+</main>
+
+<footer class="container site-footer">
+  <p>© <span id="year"></span> Taras <a href="#" id="to-top">Back to top ↑</a></p>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
